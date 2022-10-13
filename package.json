@@ -1,0 +1,23 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "faq accordion card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --style=compressed ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deZ1711/faq-accordion-card.git"
+  },
+  "author": "deZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deZ1711/faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/deZ1711/faq-accordion-card#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
