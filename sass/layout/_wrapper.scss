@@ -3,18 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 90%;
   background-color: white;
   border-radius: 10px;
   gap: 10px;
-  &__logo--mobile {
+  padding-bottom: 40px;
+  padding-top: 70px;
+  position: relative;
+  margin-top: 60px;
+  &__logo {
     position: absolute;
-    width: 70%;
-    top: -28%;
+    width: 230px;
+    height: 230px;
+    top: -105px;
+  }
+  &__pattern {
+    position: absolute;
+    top: -10px;
   }
   &__title {
     margin-bottom: 20px;
+    padding-top: 55px;
   }
   &__content {
     display: flex;
