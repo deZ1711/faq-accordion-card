@@ -1,6 +1,38 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+  &__logo--mobile {
+    position: absolute;
+    width: 70%;
+    top: -28%;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+  }
+  &__separator {
+    content: '';
+    height: 1px;
+    background: $separators-lightblue;
+  }
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__arrow {
+    height: fit-content;
+  }
 }
