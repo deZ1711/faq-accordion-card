@@ -10,23 +10,25 @@
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
+  <script src="app.js" defer></script>
+
 </head>
 <body>
   <div class="container">
     <div class="wrapper">
       <div class="wrapper__logo">
-          <img class="wrapper__logo--mobile" src="images/illustration-woman-online-mobile.svg" alt="">
+          <img class="wrapper__logo--mobile" src="images/illustration-woman-online-mobile.svg" alt="a woman with a computer on internet">
       </div>
       <div class="wrapper__pattern">
         <img src="images/bg-pattern-mobile.svg" alt="">
       </div>
-      <div class="wrapper__content">
+      <section class="wrapper__content">
         <h1 class="wrapper__title">faq</h1>
-        <button class="wrapper__question">
+        <button class="wrapper__question wrapper__question--active">
           How many team members can I invite?
           <img class="wrapper__arrow" src="/images/icon-arrow-down.svg" alt="arrow down icon to open the answer">
         </button>
-        <div class="wrapper__answer hide">
+        <div class="wrapper__answer">
           You can invite up to 2 additional users on the Free plan. There is no limit on 
           team members for the Premium plan.
         </div>
@@ -64,7 +66,7 @@
           Chat and email support is available 24/7. Phone lines are open during normal business hours.
         </div>
         <div class="wrapper__separator"></div>
-      </div>
+      </section>
     </div>
   </div>
  
