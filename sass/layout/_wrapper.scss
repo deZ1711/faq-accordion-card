@@ -10,18 +10,60 @@
   padding-bottom: 40px;
   padding-top: 70px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 80px;
+  overflow: hidden;
+  @media (min-width: 440px) {
+    flex-direction: row;
+    align-items: stretch center;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: static;
+    height: 50%;
+  }
   &__logo {
+    &--desktop {
+      display: none;
+    }
+    @media (min-width: 440px) {
+      display: flex;
+      position: relative;
+      background-image: url(/images/bg-pattern-desktop.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position-x: 110%;
+      background-position-y: 70%;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+        position: absolute;
+        left: -20%;
+        top: 10%;
+        width: 110%;
+      }
+    }
     position: absolute;
     width: 230px;
     height: 230px;
     top: -105px;
   }
   &__pattern {
+    @media (min-width: 440px) {
+      &--mobile {
+        display: none;
+      }
+    }
     position: absolute;
     top: -10px;
   }
   &__title {
+    @media (min-width: 440px) {
+      text-align: left;
+    }
     margin-bottom: 20px;
     padding-top: 40px;
     font-weight: 700;
@@ -33,6 +75,11 @@
     flex-direction: column;
     gap: 15px;
     width: 90%;
+    @media (min-width: 440px){
+      width: auto;
+      padding-right: 30px;;
+      width: 50%;
+    }
   }
   &__separator {
     content: '';
