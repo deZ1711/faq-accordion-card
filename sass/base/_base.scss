@@ -18,3 +18,10 @@ body {
 .hide {
     display: none;
 }
+
+@media (min-width: 440px) {
+    button:hover {
+        color: $prim-text-red;
+        cursor: pointer;
+    }
+}
