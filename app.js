@@ -1,16 +1,3 @@
-// au clic ,
-
-// SI 
-
-// button a deja wrapper__question--active, 
-// retirer la classe et ajouter hide a la div suivant le button
-
-// SINON 
-
-// mettre hide a toute les div suivant les buttons
-// ajouter wrapper__question--active au button 
-// retirer hide a la div suivant le button 
-
 const question = document.querySelectorAll('button');
 const answer = document.querySelectorAll('button + div');
 
