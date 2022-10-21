@@ -18,3 +18,8 @@ body {
 .hide {
     display: none;
 }
+
+button:hover {
+    color: $prim-text-red;
+    cursor: pointer;
+}

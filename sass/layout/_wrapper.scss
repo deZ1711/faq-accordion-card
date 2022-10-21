@@ -1,3 +1,6 @@
+// todo : media a 800px 
+// refaire les positions et enlever loverflow hidden en mobile
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -11,45 +14,56 @@
   padding-top: 70px;
   position: relative;
   margin-top: 80px;
-  overflow: hidden;
   @media (min-width: 440px) {
     flex-direction: row;
     align-items: stretch center;
     padding-bottom: 0;
     padding-top: 0;
-    position: static;
-    height: 50%;
+    height: auto;
+    width: 800px;
   }
   &__logo {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: -105px;
     &--desktop {
+      display: none;
+    }
+    &--box {
       display: none;
     }
     @media (min-width: 440px) {
       display: flex;
       position: relative;
       background-image: url(/images/bg-pattern-desktop.svg);
-      background-size: auto;
+      background-size: 200%;
       background-repeat: no-repeat;
       background-position-x: 110%;
       background-position-y: 70%;
       width: 50%;
       height: 100%;
       top: 0;
+      overflow: hidden;
       &--mobile {
         display: none;
       }
       &--desktop {
-        display: block;
+        display: inline-block;
         position: absolute;
         left: -20%;
         top: 10%;
         width: 110%;
       }
+      &--box {
+        display: inline-block;
+        position: absolute;
+        left: -7.2%;
+        top: 51%;
+        width: 15%;
+        z-index: 1;
+      }
     }
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    top: -105px;
   }
   &__pattern {
     @media (min-width: 440px) {
