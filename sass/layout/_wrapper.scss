@@ -12,6 +12,7 @@
   position: relative;
   margin-top: 80px;
   @media (min-width: 440px) {
+    margin-top: 0;
     flex-direction: row;
     align-items: stretch center;
     padding-bottom: 0;
