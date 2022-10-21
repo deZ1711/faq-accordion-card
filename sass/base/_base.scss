@@ -19,7 +19,9 @@ body {
     display: none;
 }
 
-button:hover {
-    color: $prim-text-red;
-    cursor: pointer;
+@media (min-width: 440px) {
+    button:hover {
+        color: $prim-text-red;
+        cursor: pointer;
+    }
 }
